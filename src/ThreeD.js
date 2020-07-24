@@ -33,7 +33,7 @@ const ThreeD = () => {
             {/* <Effect /> */}
             <Sphere position={[-1, 0, -6]} />
             {/* <Suzanne position={[5, 0, 1]} rotation={[0, -5, 0]} onClick={() => history.push('/ProductOne')} /> */}
-            <Jacket onClick={() => window.appHistory.push("/view/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1Njk4NzE2Nzk1NjI=")}/>
+            <Jacket onClick={() => window.appHistory.push("/ProductOne")}/>
             {/* <Sphere position={[4, 0, -4]}  /> */}
             <Sphere position={[-1, 0, -6]} />
           </Suspense>

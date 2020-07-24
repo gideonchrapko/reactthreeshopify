@@ -67,7 +67,7 @@ h2 {
 }
 
 .Product-wrapper {
-  max-width: 900px;
+  max-width: 100px;
   margin: 40px auto 0;
   display: flex;
   flex-wrap: wrap;

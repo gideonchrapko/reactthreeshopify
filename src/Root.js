@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import { createBrowserHistory } from "history";
 
-import Single from './NewComp/Single'
+// import Single from './NewComp/Single'
 import ThreeD from './ThreeD'
 import Hello from './Hello'
 import App from './App'
@@ -29,7 +29,7 @@ const Root = ({ store }) => {
           />
           <Route exact path="/" component={ThreeD} />
           <Route path="/Product" component={Hello} />
-          <Route exact path="/view/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1Njk4NzE2Nzk1NjI=" render={GenericProductPage}/>
+          <Route exact path="/ProductOne" render={Hello}/>
       </Router>
     </Provider>
     )

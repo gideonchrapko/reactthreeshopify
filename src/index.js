@@ -24,7 +24,6 @@ const client = Client.buildClient({
 });
 
 
-
 store.dispatch({type: 'CLIENT_CREATED', payload: client});
 // buildClient() is synchronous, so we can call all these after!
 client.product.fetchAll().then((res) => {
