@@ -9,9 +9,6 @@ import Sphere from './components/Sphere'
 import Jacket from './components/Jacket'
 import Loading from './components/Loading'
 
-import './threed.css'
-
-
 const ThreeD = () => {
   return (
       <>
@@ -30,11 +27,8 @@ const ThreeD = () => {
           <Controls />
           <Suspense fallback={<Dom center><Loading /></Dom>}>
             <Environment />
-            {/* <Effect /> */}
             <Sphere position={[-1, 0, -6]} />
-            {/* <Suzanne position={[5, 0, 1]} rotation={[0, -5, 0]} onClick={() => history.push('/ProductOne')} /> */}
-            <Jacket onClick={() => window.appHistory.push("/ProductOne")}/>
-            {/* <Sphere position={[4, 0, -4]}  /> */}
+            <Jacket onClick={() => window.appHistory.push("/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=")}/>
             <Sphere position={[-1, 0, -6]} />
           </Suspense>
           </Canvas>

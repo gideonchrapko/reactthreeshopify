@@ -1,14 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-
-// import { Router, Route } from "react-router-dom"
 import { createBrowserHistory } from "history"
-
-// import Routes from './Routes'
 import Client from 'shopify-buy'
-import { Provider } from 'react-redux'
-
-// import App from './App'
 import store from './Store'
 import Root from './Root'
 

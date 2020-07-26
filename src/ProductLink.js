@@ -1,17 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import GenericProductPage from './components/GenericProductPage'
 
-const Hello = () => {
+const ProductLink = () => {
     return (
         <div>
             <Link to="/">
-                3D stuff
+                Back
             </Link>
             <GenericProductPage />
         </div>
     )
 }
 
-export default Hello
+export default ProductLink;

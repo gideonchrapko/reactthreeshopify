@@ -3,6 +3,10 @@ import Products from './shopify/Products';
 import { connect } from 'react-redux'
 import store from '../Store';
 
+import { Link } from 'react-router-dom'
+
+
+
 class GenericProductsPage extends React.Component {
   constructor() {
     super();

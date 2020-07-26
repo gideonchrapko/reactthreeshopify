@@ -1,17 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from "history";
-
-// import Single from './NewComp/Single'
-import ThreeD from './ThreeD'
-import Hello from './Hello'
-import App from './App'
-import GenericProductPage from './components/GenericProductPage'
-
-// import store from './Store';
+import ThreeD from './ThreeD';
+import ProductLink from './ProductLink';
+import App from './App';
 
 const customHistory = createBrowserHistory({
     // basename: config.urlBasename || ""
@@ -28,16 +22,14 @@ const Root = ({ store }) => {
               }}
           />
           <Route exact path="/" component={ThreeD} />
-          <Route path="/Product" component={Hello} />
-          <Route exact path="/ProductOne" render={Hello}/>
+          <Route exact path="/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=" render={ProductLink}/>
       </Router>
     </Provider>
     )
   }
 
-
 Root.propTypes = {
   store: PropTypes.object.isRequired
 }
 
-export default Root
+export default Root;
