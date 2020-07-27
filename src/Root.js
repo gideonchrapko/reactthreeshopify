@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import ThreeD from './ThreeD';
-import ProductLink from './ProductLink';
+import ProductLink from './components/ProductLink';
 import App from './App';
 
 const customHistory = createBrowserHistory({

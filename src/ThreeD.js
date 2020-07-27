@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import { Canvas, Dom } from 'react-three-fiber'
 import { withRouter } from "react-router-dom";
 import Controls from './components/Controls'
+import Lights from './components/Lights'
 import Environment from './components/Environment'
 
 import Sphere from './components/Sphere'
@@ -27,6 +28,7 @@ const ThreeD = () => {
           <Controls />
           <Suspense fallback={<Dom center><Loading /></Dom>}>
             <Environment />
+            {/* <Lights /> */}
             <Sphere position={[-1, 0, -6]} />
             <Jacket onClick={() => window.appHistory.push("/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=")}/>
             <Sphere position={[-1, 0, -6]} />

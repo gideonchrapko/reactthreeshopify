@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import GenericProductPage from './components/GenericProductPage'
+import GenericProductPage from './GenericProductPage'
 
 const ProductLink = () => {
     return (
