@@ -23,6 +23,7 @@ const Root = ({ store }) => {
           />
           <Route exact path="/" component={ThreeD} />
           <Route exact path="/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=" render={ProductLink}/>
+          <Route exact path="/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NjE3MzI2NjU0MTg=" render={ProductLink}/>
       </Router>
     </Provider>
     )

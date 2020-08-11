@@ -30,8 +30,9 @@ const ThreeD = () => {
             <Environment />
             {/* <Lights /> */}
             <Sphere position={[-1, 0, -6]} />
-            <Jacket onPointertDown={() => window.appHistory.push("/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=")}/>
-            <Sphere position={[-1, 0, -6]} />
+            <Jacket />
+            <Jacket onClick={() => window.appHistory.push("/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NTkyMzUyNTIyOTg=")}/>
+            <Sphere position={[-1, 0, -6]} onClick={() => window.appHistory.push("/Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1NjE3MzI2NjU0MTg=")}/>
           </Suspense>
           </Canvas>
       </>
