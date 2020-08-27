@@ -1,6 +1,9 @@
 import * as THREE from 'three'
 import React, { Suspense } from 'react'
 import { Canvas, Dom } from 'react-three-fiber'
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+
 import { withRouter } from "react-router-dom";
 import Controls from './components/Controls'
 import Lights from './components/Lights'

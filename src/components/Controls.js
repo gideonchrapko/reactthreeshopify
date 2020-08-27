@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 extend({ OrbitControls })
 
 export default function Controls({ disable, ...props }) {
+  
   const { camera, gl } = useThree()
   const ref = useRef()
   useFrame(() => ref.current.update())

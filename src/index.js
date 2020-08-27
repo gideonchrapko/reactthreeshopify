@@ -1,21 +1,23 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import { createBrowserHistory } from "history"
+
+// import { createBrowserHistory } from "history"
+// import { PersistGate } from 'redux-persist/integration/react'
+
 import Client from 'shopify-buy'
 import store from './Store'
 import Root from './Root'
 
 import './styles.css'
 
-const customHistory = createBrowserHistory({
-  // basename: config.urlBasename || ""
-});
+// const customHistory = createBrowserHistory({
+//   // basename: config.urlBasename || ""
+// });
 
 const client = Client.buildClient({
   storefrontAccessToken: 'a416f71ae0b8cea01da02b110f7af961',
   domain: 'schweiz-foundry.myshopify.com'
 });
-
 
 store.dispatch({type: 'CLIENT_CREATED', payload: client});
 // buildClient() is synchronous, so we can call all these after!
@@ -33,4 +35,4 @@ client.shop.fetchInfo().then((res) => {
 
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(<Root store={store} />, document.getElementById('root'))
+ReactDOM.render(<Root store={store}  />, document.getElementById('root'))
