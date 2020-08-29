@@ -1,8 +1,20 @@
-import {createStore} from 'redux';
+import { createStore } from 'redux';
 import reducer from './reducers/Cart'; 
 
+const store = createStore(reducer)
 
-export default createStore(reducer);
+function saveToLocalStorage(state) {
+    try {
+        const serializedState = JSON.stringify(state)
+        localStorage.setItem('state', serializedState)
+    } catch(e) {
+        console.log(e)
+    }
+}
+
+store.subscribe(() => saveToLocalStorage(store.getState()) )
+
+export default store;
 
 
 // import reducer from './reducers/Cart'; 
