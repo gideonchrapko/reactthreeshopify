@@ -145,11 +145,13 @@ function DesktopHeader({countryCode, isHome, menu, openCart, title}) {
         </Link>
         <nav className="flex gap-8">
           {/* Top level menu items */}
-          {(menu?.items || []).map((item) => (
-            <Link key={item.id} to={item.to} target={item.target}>
-              {item.title}
-            </Link>
-          ))}
+          {(menu?.items || []).map((item) => {
+            return (
+              <Link key={item.id} to={item.to} target={item.target}>
+                {item.title}
+              </Link>
+            )
+          })}
         </nav>
       </div>
       <div className="flex items-center gap-1">
@@ -168,6 +170,7 @@ function DesktopHeader({countryCode, isHome, menu, openCart, title}) {
             placeholder="Search"
             name="q"
           />
+          hello
           <button type="submit" className={styles.button}>
             <IconSearch />
           </button>

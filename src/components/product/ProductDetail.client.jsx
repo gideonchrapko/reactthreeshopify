@@ -1,7 +1,6 @@
 // @ts-expect-error @headlessui/react incompatibility with node16 resolution
 import {Disclosure} from '@headlessui/react';
 import {Link} from '@shopify/hydrogen';
-
 import {Text, IconClose} from '~/components';
 
 export function ProductDetail({title, content, learnMore}) {
@@ -13,7 +12,7 @@ export function ProductDetail({title, content, learnMore}) {
           <Disclosure.Button className="text-left">
             <div className="flex justify-between">
               <Text size="lead" as="h4">
-                {title}
+                {title} hello
               </Text>
               <IconClose
                 className={`${

@@ -10,5 +10,5 @@ export function Input({className = '', type, variant, ...props}) {
 
   const styles = clsx(variants[variant], className);
 
-  return <input type={type} {...props} className={styles} />;
+  return <input type={type} {...props} className={styles}/>;
 }

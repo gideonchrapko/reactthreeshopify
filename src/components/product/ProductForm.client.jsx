@@ -84,7 +84,7 @@ export function ProductForm() {
                 className="flex flex-col flex-wrap mb-4 gap-y-2 last:mb-0"
               >
                 <Heading as="legend" size="lead" className="min-w-[4rem]">
-                  {name}
+                  {name}sadsasds
                 </Heading>
                 <div className="flex flex-wrap items-baseline gap-4">
                   <ProductOptions
@@ -112,13 +112,13 @@ export function ProductForm() {
             as="span"
           >
             {isOutOfStock ? (
-              <Text>Sold out</Text>
+              <Text>Sole dout</Text>
             ) : (
               <Text
                 as="span"
                 className="flex items-center justify-center gap-2"
               >
-                <span>Add to bag</span> <span>·</span>{' '}
+                <span>Add to yag</span> <span>·</span>{' '}
                 <Money
                   withoutTrailingZeros
                   data={selectedVariant.priceV2}

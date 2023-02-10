@@ -7,7 +7,6 @@ import {parseMenu} from '~/lib/utils';
 
 const HEADER_MENU_HANDLE = 'main-menu';
 const FOOTER_MENU_HANDLE = 'footer';
-
 const SHOP_NAME_FALLBACK = 'Hydrogen';
 
 /**

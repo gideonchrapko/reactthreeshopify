@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import {missingClass, formatText} from '~/lib/utils';
 
 export function Heading({
-  as: Component = 'h2',
+  as: Component = 'h1',
   children,
   className = '',
   format,

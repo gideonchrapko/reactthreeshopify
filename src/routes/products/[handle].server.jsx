@@ -92,6 +92,7 @@ export default function Product() {
                   <Heading as="h1" format className="whitespace-normal">
                     {title}
                   </Heading>
+                  big bug
                   {vendor && (
                     <Text className={'opacity-50 font-medium'}>{vendor}</Text>
                   )}

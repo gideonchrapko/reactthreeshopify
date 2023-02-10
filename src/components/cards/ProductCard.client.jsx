@@ -13,7 +13,6 @@ import {getProductPlaceholder} from '~/lib/placeholders';
 
 export function ProductCard({product, label, className, loading, onClick}) {
   let cardLabel;
-
   const cardData = product?.variants ? product : getProductPlaceholder();
 
   const {
@@ -31,6 +30,8 @@ export function ProductCard({product, label, className, loading, onClick}) {
   }
 
   const styles = clsx('grid gap-6', className);
+
+  console.log(loading)
 
   return (
     <Link onClick={onClick} to={`/products/${product.handle}`}>

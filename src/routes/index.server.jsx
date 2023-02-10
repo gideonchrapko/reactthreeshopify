@@ -26,10 +26,11 @@ export default function Homepage() {
     <Layout>
       <Suspense>
         <SeoForHomepage />
+        <h1>homepage doesn't have the header on it</h1>
       </Suspense>
-      <Suspense>
+      {/* <Suspense>
         <HomepageContent />
-      </Suspense>
+      </Suspense> */}
     </Layout>
   );
 }
